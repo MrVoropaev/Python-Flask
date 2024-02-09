@@ -1,0 +1,17 @@
+{% extends 'common_template.html' %}
+
+{% block title %}
+  {{ page_name }}
+{% endblock %}
+
+{% block header %}
+  {{ page_name }}
+{% endblock %}
+
+{% block content %}
+  <div class="contacts_text">
+    <p>{{ email }}</p>
+    <p>{{ site }}</p>
+    <p>{{ location }}</p>
+  </div>
+{% endblock %}

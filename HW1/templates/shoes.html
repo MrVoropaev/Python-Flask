@@ -1,0 +1,23 @@
+{% extends 'goods_template.html' %}
+
+{% block title %}
+    Обувь
+{% endblock %}
+
+{% block header %}
+    Обувь
+{% endblock %}
+
+{% block products %}
+    {% for item in shoes %}
+        <div class="item">
+            <div class="item__image">
+                <img class="item__pic" src="/static/image/{{ item.img }}" alt="{{ item.alt }}">
+            </div>
+            <div class="item__text">
+                <h4 class="item__title">{{ item.title }}</h4>
+                <p class="item__description">{{ item.desc }}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

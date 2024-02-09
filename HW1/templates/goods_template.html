@@ -1,0 +1,14 @@
+{% extends 'common_template.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+    <p class="text">Выберите свою идеальную одежду и обувь на нашем сайте и добавьте стиль и комфорт в свой гардероб</p>
+    <div class="products">
+        {% block products %}
+            Products descriptions
+        {% endblock %}
+    </div>
+{% endblock %}
