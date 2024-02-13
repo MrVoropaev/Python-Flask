@@ -1,0 +1,28 @@
+body {
+    background-color: #1a1a1a;
+    color: orange;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"] {
+    background-color: #333;
+    color: orange;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
