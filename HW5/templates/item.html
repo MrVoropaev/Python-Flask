@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+</head>
+<body>
+    <h3>
+        Урок 5. Знакомство с FastAPI <br>
+        Все запросы по адресу: <a href="http://127.0.0.1:8000/docs">localhost/docs(ссылка)</a>
+    </h3>
+
+    <h4>Список задач:</h4>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }}</li>
+        {% endfor %}
+    </ul>
+
+    <h4>Информация о задаче:</h4>
+    <p>Название: {{ task.title }}</p>
+    <p>Описание: {{ task.description }}</p>
+    <p>Статус: {{ task.status }}</p>
+</body>
+</html>
